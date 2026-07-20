@@ -8,9 +8,16 @@ import { scaleIn } from "@/lib/motion-variants";
 interface Project {
   id: string;
   title: string;
-  tags: string[];
-  caseStudy: { problem: string; action: string; result: string };
-  links?: { label: string; url: string }[];
+  tags: readonly string[];
+  caseStudy: {
+    problem: string;
+    action: string;
+    result: string;
+  };
+  links?: readonly {
+    label: string;
+    url: string;
+  }[];
 }
 
 export default function ProjectModal({ project, onClose }: { project: Project | null; onClose: () => void }) {
