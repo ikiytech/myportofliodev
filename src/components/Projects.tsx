@@ -13,7 +13,9 @@ const iconMap: Record<string, React.ComponentType<{ size?: number; className?: s
 };
 
 export default function Projects() {
-  const [activeProject, setActiveProject] = useState<typeof projects[0] | null>(null);
+  type Project = (typeof projects)[number];
+
+const [activeProject, setActiveProject] = useState<Project | null>(null);
 
   return (
     <section id="projects" className="py-24">
