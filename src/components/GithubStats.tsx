@@ -17,7 +17,7 @@ export default function GithubStats() {
           <div className="grid md:grid-cols-2 gap-4">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src={`https://github-readme-stats.vercel.app/api?username=${githubUsername}&show_icons=true&theme=dark&hide_border=true&bg_color=1c1c1a&title_color=f2a900&text_color=e8e8e4&icon_color=f2a900`}
+              src={'https://github-readme-stats-eight-theta.vercel.app/api?username=${githubUsername}&show_icons=true&theme=dark&hide_border=true&bg_color=1c1c1a&title_color=f2a900&text_color=e8e8e4&icon_color=f2a900'}
               alt={`GitHub stats ${githubUsername}`}
               loading="lazy"
               className="max-w-full h-auto rounded-lg mx-auto"
